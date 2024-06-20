@@ -1,12 +1,10 @@
 package com.example.thiswebsitewillselfdestruct.model;
 
-
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-
 import java.time.LocalDateTime;
 
 @AllArgsConstructor
@@ -14,7 +12,7 @@ import java.time.LocalDateTime;
 @Getter
 @Setter
 @Entity
-@Table(name = "MESSAGE")
+@Table(name = "MESSAGES")
 public class Message {
 
     @Id
