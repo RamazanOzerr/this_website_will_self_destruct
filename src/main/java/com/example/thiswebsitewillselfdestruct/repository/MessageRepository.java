@@ -6,7 +6,7 @@ import org.springframework.data.jpa.repository.Query;
 
 public interface MessageRepository extends JpaRepository<Message, Integer> {
 
-    @Query(value = "SELECT * FROM MESSAGES ORDER BY RAND() LIMIT 1", nativeQuery = true)
+    @Query(value = "SELECT * FROM messages ORDER BY RAND() LIMIT 1", nativeQuery = true)
     Message getRandomMessage();
 
 }
